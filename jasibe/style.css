@@ -1,0 +1,156 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #7d8da1;
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navegacion__img{
+    height: 50px;
+    margin-left: 30px;
+}
+
+.contenedor__navegacion{
+    margin-top: 15px;
+    margin-left: 350px;
+}
+
+.btn{
+    position: absolute;
+    left: 31%;
+    top: 2%;
+    background: var(--main-color);
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--color-white);
+    transition: all .7s;
+    cursor: pointer;
+}
+
+
+.navegacion__busqueda{
+    outline: none;
+    width: 400px;
+    height: 30px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border: 2px solid var(--main-color);
+    padding-left: 25px;
+}
+
+
+.contenedor__iconos{
+    margin-left: 300px;
+    margin-top: 15px;
+}
+
+.contenedor__iconos i{
+    color: var(--main-color);
+    padding: 0 6px;
+}
+
+.contenedor__links{
+    height: 7vh;
+    background: var(--main-color);
+    margin-top: 23px;
+    border: 2px solid var(--color-black);
+}
+
+.links{
+    display: flex;
+}
+
+.nav__links{
+    list-style: none;
+    width: 350px;
+    color: var(--color-white);
+    text-decoration: none;
+    height: 7vh;
+    text-align: center;
+    line-height: 7vh;
+    cursor: pointer;
+    transition: background-color .7s;
+}
+
+.nav__links:hover{
+    background-color: var(--color-black);
+}
+
+.link__a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: bold;
+}
+.slider{
+    display: flex;
+    width: 1100px;
+    height: 430px;
+    margin-left: 10%;
+    margin-top: 2rem;
+
+}
+.slider__img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.slider__img:hover{
+    cursor: crosshair;
+    width: 100px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.tarj{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background: #f3f1f5;
+}
+
+.card{
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+}
+
+.contcard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.contcard h2, a{
+    color: rgba(255, 255, 255, .8);
+}
+
+.card:hover .contcard{
+    opacity: 1;
+}
